@@ -28,7 +28,7 @@ color: ${props => props.theme.text};
 background-color: ${props => props.theme.body};
 padding: 2rem;
 width: 30vw;
-height: 60vh;
+height: 70vh;
 z-index:3;
 line-height: 1.5;
 cursor: pointer;
@@ -91,9 +91,9 @@ const MySkillsPage = () => {
 <SocialIcons theme='light'/>
 <PowerButton />
 <ParticleComponent theme='light' />
-            <Main>
+            {/* <Main>
 <Title>
-    <Design width={40} height={40} /> Designer
+    <Design width={40} height={40} /> Frontend and Backend Developer
 </Title>
 <Description>
 I love to create design which speaks, Keep it clean, minimal and simple.
@@ -102,7 +102,7 @@ I love to create design which speaks, Keep it clean, minimal and simple.
 <strong>I like to Design</strong>
 <ul>
     <li>
-        Web Design
+        Web App
     </li>
     <li>
         Mobile Apps
@@ -119,18 +119,37 @@ I love to create design which speaks, Keep it clean, minimal and simple.
 </ul>
 </Description>
 
-            </Main>
+            </Main> */}
             <Main>
 <Title>
     <Develope width={40} height={40} /> Frontend Developer
 </Title>
 <Description>
-I value business or brand for which i'm creating, thus i enjoy bringing new ideas to life.
-</Description>
+I love turning ideas into visually stunning and user-friendly interfaces, always keeping the brand's vision at heart. Let’s make interactions delightful! 🎨✨</Description>
 <Description>
 <strong>Skills</strong>
 <p>
 Html, Css, Js, React, Redux, Sass, Bootstrap, Tailwind, Firebase etc.
+</p>
+</Description>
+<Description>
+<strong>Tools</strong>
+<p>
+VScode, Github, Codepen etc.
+</p>
+</Description>
+
+            </Main>
+            <Main>
+<Title>
+    <Develope width={40} height={40} /> Backend Developer
+</Title>
+<Description>
+I thrive on building solid, scalable systems that power ideas behind the scenes, ensuring smooth, reliable experiences for users. Let’s bring ideas to life! 🚀💻</Description>
+<Description>
+<strong>Skills</strong>
+<p>
+Nodejs, Express, MongoDB, Firebase, RestAPI, Graphql, MsSQl, MySQL, Postman, Docker,AWS, GCP. 
 </p>
 </Description>
 <Description>

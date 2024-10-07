@@ -37,9 +37,9 @@ img{
 const Main =  styled.div`
   border: 2px solid ${(props) => props.theme.text};
   color: ${(props) => props.theme.text};
-  padding: 2rem;
+  padding: 1rem;
   width: 50vw;
-  height: 60vh;
+  height: 80vh;
   z-index: 3;
   line-height: 1.5;
   display: flex;
@@ -72,12 +72,11 @@ const AboutPage = () => {
             <img src={astronaut} alt="spaceman" />
         </Spaceman>    
         <Main>
-        I'm a front-end developer located in India. I love to create simple yet beautiful websites with great user experience.
-<br /> <br/>
-I'm interested in the whole frontend stack Like trying new things and building great projects. I'm an independent freelancer and blogger. I love to write blogs and read books.
-<br/> <br/>
-I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
-        </Main>
+  I'm a Full-Stack MERN Developer from India with strong OOP principles and experience in Spring Boot. I love building sleek, efficient apps across the full stack and enjoy experimenting with new technologies. I'm also a freelancer, blogger, and a constant learner.
+  <br /> <br/>
+  To me, coding is an art. Let's connect via social links!
+</Main>
+
 
         <BigTitle text="ABOUT" top="10%" left="5%" />
 

@@ -1,3 +1,5 @@
+// src/components/WorkPage.js
+
 import React, { useEffect, useRef } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { DarkTheme } from "./Themes";
@@ -7,14 +9,13 @@ import LogoComponent from "../subComponents/LogoComponent";
 import SocialIcons from "../subComponents/SocialIcons";
 import PowerButton from "../subComponents/PowerButton";
 
-import { Work } from "../data/WorkData";
+import { projectsData } from "../data/WorkData"; // Ensure this import is correct
 import Card from "../subComponents/Card";
 import { YinYang } from "./AllSvgs";
 import BigTitlte from "../subComponents/BigTitlte";
 
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
-
   height: 400vh;
   position: relative;
   display: flex;
@@ -27,9 +28,9 @@ const Main = styled(motion.ul)`
   left: calc(10rem + 15vw);
   height: 40vh;
   display: flex;
-
   color: white;
 `;
+
 const Rotate = styled.span`
   display: block;
   position: fixed;
@@ -45,7 +46,6 @@ const container = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
-
     transition: {
       staggerChildren: 0.5,
       duration: 0.5,
@@ -62,7 +62,6 @@ const WorkPage = () => {
 
     const rotate = () => {
       element.style.transform = `translateX(${-window.pageYOffset}px)`;
-
       return (yinyang.current.style.transform =
         "rotate(" + -window.pageYOffset + "deg)");
     };
@@ -81,7 +80,7 @@ const WorkPage = () => {
         <PowerButton />
 
         <Main ref={ref} variants={container} initial="hidden" animate="show">
-          {Work.map((d) => (
+          {projectsData.map((d) => (
             <Card key={d.id} data={d} />
           ))}
         </Main>
